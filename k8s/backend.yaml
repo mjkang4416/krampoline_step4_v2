@@ -16,6 +16,10 @@ spec:
         - name: backend
           # 여러분의 backend image 주소를 입력해주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_08c688da8d2b
+          command: ["/bin/sh"]
+          args:
+          - "-c"
+          - "sleep infinity"
           env:
             - name: TZ
               value: Asia/Seoul
